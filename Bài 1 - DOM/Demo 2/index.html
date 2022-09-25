@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate</title>
+</head>
+<body>
+    <div id="title">Code gym online</div>
+    <script>
+        const displayTitle = document.getElementById("title");
+        // console.log(displayTitle);
+        // displayTitle.innerText = "<p style='color: red;'> Noi dung da duoc thay doi</p>";
+        // console.log(displayTitle.innerHTML);
+        // displayTitle.style = 'color: red; font-weight: bold;';
+        // const arr = [];
+        // let arr1 = [];
+        // arr.push(1);
+        // displayTitle.appendChild('<p>');
+        const newP = document.createElement("p");
+        const newContent = document.createTextNode("text node them");
+        newP.appendChild(newContent);
+        document.body.insertBefore(newP, displayTitle);
+    </script>
+</body>
+</html>
